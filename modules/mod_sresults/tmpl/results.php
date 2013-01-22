@@ -1,11 +1,24 @@
 <?php if(!empty($results)):?>
-<h2><span style="font-size: 22pt;"><strong><span style="color: #ff0000;"><?php echo $results[0]->sex.' '.$sportName.' ';?></span></strong></span><span style="font-size: 24pt;"><span style="color: #ff0000;"><span style="font-size: 18pt;"><?php echo '- '. $provinceName.', '. $results[0]->organization;?></span><br /></span></span></h2>
+
+<h2>
+    <span style="font-size: 22pt;"><strong><span style="color: #ff0000;"><?php echo $results[0]->sex.' '.$sportName.' ';?></span></strong></span>
+
+    <?php if ($provinceName != ""):?>
+        <span style="font-size: 24pt;">
+            <span style="color: #ff0000;">
+                <span style="font-size: 18pt;">
+                    <?php echo '- '. $provinceName?>
+                </span><br />
+            </span>
+        </span>
+    <?php endif;?> 
+</h2>
 <?php foreach($results as $res):?>
 <table style="width: 100%; border: 1px solid #dddddd;" border="1" cellpadding="0" cellspacing="0">
 <tbody>
 <tr>
 <td colspan="3" style="border: 1px solid #dddddd; padding: 0 0 0 10px;">
-<h2><?php echo $res->school;?></h2>
+<h2><?php echo $res->school ?>, <span style="color: #ff0000;"><?php echo $res->organization;?><?php if ($provinceName == ""): echo ', ' . $res->province;endif;?></span></h2>
 </td>
 </tr>
 <tr valign="top">

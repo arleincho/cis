@@ -28,32 +28,45 @@ class modBottomschoolsearchHelper
 
   public function getResult($post)
 
-  	  {
+      {
 
-	    // Get the dbo
+        // Get the dbo
 
-		 $db = JFactory::getDbo();
+         $db = JFactory::getDbo();
 
-		      $query = "SELECT * FROM #__school_details 
+            if($post['province'] == ""){
+                $sql_prov = "";
+                $order = "ORDER BY p.province ASC";
+            }else{
+                $sql_prov = "AND p.id = '{$post['province']}'";
+                $order = "ORDER BY s.id ASC";
+            }
+              $query = "SELECT 
+                    s.school,
+                    s.sex,
+                    s.organization,
+                    s.address,
+                    s.telephone,
+                    s.fax,
+                    s.email,
+                    s.website,
+                    s.sports,
+                    p.province
+                FROM #__school_details s, #__province p
 
-					     WHERE sex = '".$post['sex']."'
+                 WHERE s.province = p.id
+                 AND s.sex = '{$post['sex']}'
+                 AND s.sports = '{$post['sport']}'
+                 {$sql_prov}
+                 {$order}"; 
 
-					     AND sports = '".$post['sport']."'
+                $db->setQuery($query);
 
-					     AND province = '".$post['province']."'
+         $res = $db->loadObjectList();      
 
-					     AND organization = '".$post['org']."'
+         return $res;
 
-					     ORDER BY id ASC"; 
-
-		    	$db->setQuery($query);
-
-         $res = $db->loadObjectList();		
-
-	     return $res;
-
-	  }
-
+      }
 	  
 
 	public static function getSports()

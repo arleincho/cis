@@ -26,8 +26,6 @@ $sport  = JRequest::getVar('sport');
 
 $prov   = JRequest::getVar('province');
 
-$org    = JRequest::getVar('org');
-
 $submit = JRequest::getVar('submit');
 
 //Get Results
@@ -40,7 +38,11 @@ $province = modSchoolsearchHelper::getProvince();
 if(!empty($post)):
 $results = modSchoolsearchHelper::getResult($post);
 $sportName = modSchoolsearchHelper::getSportName($results[0]->sports);
-$provinceName = modSchoolsearchHelper::getProvName($results[0]->province);
+
+$provinceName = "";
+if($post['province'] != ""){
+    $provinceName = modSchoolsearchHelper::getProvName($post['province']);
+}
  
 $session =& JFactory::getSession();
 

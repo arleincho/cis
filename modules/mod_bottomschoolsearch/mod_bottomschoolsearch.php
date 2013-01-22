@@ -90,8 +90,10 @@ $results = modBottomschoolsearchHelper::getResult($post);
 
 $sportName = modBottomschoolsearchHelper::getSportName($results[0]->sports);
 
-$provinceName = modBottomschoolsearchHelper::getProvName($results[0]->province);
-
+$provinceName = "";
+if($post['province'] != ""){
+    $provinceName = modBottomschoolsearchHelper::getProvName($post['province']);
+}
  
 
 $session =& JFactory::getSession();

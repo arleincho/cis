@@ -17,11 +17,11 @@
 <option value="<?php echo $ss->id;?>"><?php echo $ss->sname;?></option>
 <?php endforeach;?></select></p>
 <p><strong>Province:</strong> <select id="province" name="province">
-<option value="">- Select a Province -</option>
+<option value="">- All Provinces -</option>
 <?php foreach($province as $pp):?>
 <option value="<?php echo $pp->id;?>"><?php echo $pp->province;?></option>
 <?php endforeach; ?></select></p>
-<p><strong>Organization:</strong> <label> <input type="radio" id="org1" checked="checked" value="cis" name="org"> CIS</label> <label> <input type="radio" id="org2" value="ccaa" name="org">CCAA<br><br></label> <input type="submit" value="SEARCH NOW!" id="submit" name="submit" onclick="return validateform();"></p>
+<p><input type="submit" value="SEARCH NOW!" id="submit" name="submit" onclick="return validateform();"></p>
 </div>
 </form>
 </td>
@@ -42,11 +42,6 @@ function validateform()
   if(document.getElementById('sport').value  == '')
   {
     alert('Please select Sport');
-	return false;
-  }
-  else if(document.getElementById('province').value == '')  
-  { 
-    alert('Please Select Province');
 	return false;
   }
   else

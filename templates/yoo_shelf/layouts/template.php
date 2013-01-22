@@ -180,11 +180,13 @@ include($this['path']->path('layouts:template.config.php'));
 						<section id="top-a" class="grid-block"><?php echo $this['modules']->render('innerslide', array('layout'=>$this['config']->get('innerslide'))); ?></section>
 			<?php endif; ?>
 			</div>
-			<div class="inner6schools">
-			  <?php if ($this['modules']->count('inner6schools')):?>
+			<?php if ($this['modules']->count('inner6schools')):/*
+				
+				<div class="inner6schools">
 						<section  id="top-a" class="grid-block"><?php echo $this['modules']->render('inner6schools', array('layout'=>$this['config']->get('inner6schools'))); ?></section>
-			  <?php endif;?>
-			</div>
+				</div>
+				
+			*/ endif;?>
 						
 		</div>	
 	<?php endif;?>	

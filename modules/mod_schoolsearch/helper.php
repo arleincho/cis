@@ -34,17 +34,31 @@ class modSchoolsearchHelper
 
 		 $db = JFactory::getDbo();
 
-		      $query = "SELECT * FROM #__school_details 
+            if($post['province'] == ""){
+                $sql_prov = "";
+                $order = "ORDER BY p.province ASC";
+            }else{
+                $sql_prov = "AND p.id = '{$post['province']}'";
+                $order = "ORDER BY s.id ASC";
+            }
+		      $query = "SELECT 
+                    s.school,
+                    s.sex,
+                    s.organization,
+                    s.address,
+                    s.telephone,
+                    s.fax,
+                    s.email,
+                    s.website,
+                    s.sports,
+                    p.province
+                FROM #__school_details s, #__province p
 
-					     WHERE sex = '".$post['sex']."'
-
-					     AND sports = '".$post['sport']."'
-
-					     AND province = '".$post['province']."'
-
-					     AND organization = '".$post['org']."'
-
-					     ORDER BY id ASC"; 
+			     WHERE s.province = p.id
+                 AND s.sex = '{$post['sex']}'
+			     AND s.sports = '{$post['sport']}'
+                 {$sql_prov}
+			     {$order}"; 
 
 		    	$db->setQuery($query);
 
