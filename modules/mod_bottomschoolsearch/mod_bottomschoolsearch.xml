@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<install type="module" version="1.5.0">
+
+ <name>Bottom School Search</name>
+
+ <!-- The following elements are optional and free of formatting constraints -->
+
+ <creationDate>October 2011</creationDate>
+
+ <author>Deftsoft</author>
+
+ <authorEmail>info@deftsoft.com</authorEmail>
+
+ <authorUrl>http://www.deftsoft.com</authorUrl>
+
+ <copyright>Copyright Info</copyright>
+
+ <license>License Info</license>
+
+ <!--  The version string is recorded in the components table -->
+
+ <version>1.01</version>
+
+ <!-- The description is optional and defaults to the name -->
+
+ <description>Description of the module...</description>
+
+ 
+
+ <!-- Site Main File Copy Section -->
+
+ <!-- Note the folder attribute: This attribute describes the folder
+
+      to copy FROM in the package to install therefore files copied
+
+      in this section are copied from /site/ in the package -->
+
+<files>
+
+	<filename module="mod_bottomschoolsearch">mod_bottomschoolsearch.php</filename>
+
+		<filename>tmpl/default.php</filename>
+
+		<filename>tmpl/index.html</filename>
+
+		<filename>helper.php</filename>
+
+		<filename>index.html</filename>
+
+		<filename>mod_bottomschoolsearch.xml</filename>
+
+	</files>
+
+ 
+
+ <administration>
+
+  <!-- Administration Menu Section -->
+
+  <menu>bottom schoolsearch!</menu>
+
+ 
+
+  <!-- Administration Main File Copy Section -->
+
+ 
+
+ </administration>
+
+</install>
+

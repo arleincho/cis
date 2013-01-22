@@ -1,0 +1,16 @@
+[13-Oct-2011 08:51:52] PHP Fatal error:  Call to a member function get() on a non-object in /home/mark/public_html/cis/modules/mod_jt_slideshow/mod_jt_slideshow.php on line 31
+[13-Oct-2011 08:51:52] PHP Fatal error:  Call to a member function get() on a non-object in /home/mark/public_html/cis/modules/mod_jt_slideshow/mod_jt_slideshow.php on line 31
+[13-Oct-2011 08:51:53] PHP Fatal error:  Call to a member function get() on a non-object in /home/mark/public_html/cis/modules/mod_jt_slideshow/mod_jt_slideshow.php on line 31
+[13-Oct-2011 08:53:16] PHP Fatal error:  Call to a member function get() on a non-object in /home/mark/public_html/cis/modules/mod_jt_slideshow/mod_jt_slideshow.php on line 31
+[13-Oct-2011 08:53:16] PHP Fatal error:  Call to a member function get() on a non-object in /home/mark/public_html/cis/modules/mod_jt_slideshow/mod_jt_slideshow.php on line 31
+[13-Oct-2011 08:53:19] PHP Fatal error:  Call to a member function get() on a non-object in /home/mark/public_html/cis/modules/mod_jt_slideshow/mod_jt_slideshow.php on line 31
+[13-Oct-2011 08:53:22] PHP Fatal error:  Call to a member function get() on a non-object in /home/mark/public_html/cis/modules/mod_jt_slideshow/mod_jt_slideshow.php on line 31
+[13-Oct-2011 08:53:33] PHP Fatal error:  Call to a member function get() on a non-object in /home/mark/public_html/cis/modules/mod_jt_slideshow/mod_jt_slideshow.php on line 31
+[13-Oct-2011 08:54:11] PHP Fatal error:  Call to a member function get() on a non-object in /home/mark/public_html/cis/modules/mod_jt_slideshow/mod_jt_slideshow.php on line 29
+[13-Oct-2011 08:54:11] PHP Fatal error:  Call to a member function get() on a non-object in /home/mark/public_html/cis/modules/mod_jt_slideshow/mod_jt_slideshow.php on line 29
+[13-Oct-2011 09:14:45] PHP Fatal error:  Cannot use object of type stdClass as array in /home/mark/public_html/cis/modules/mod_jt_slideshow/tmpl/default.php on line 273
+[13-Oct-2011 09:14:45] PHP Fatal error:  Cannot use object of type stdClass as array in /home/mark/public_html/cis/modules/mod_jt_slideshow/tmpl/default.php on line 273
+[13-Oct-2011 09:15:33] PHP Fatal error:  Cannot use object of type stdClass as array in /home/mark/public_html/cis/modules/mod_jt_slideshow/tmpl/default.php on line 273
+[13-Oct-2011 09:15:33] PHP Fatal error:  Cannot use object of type stdClass as array in /home/mark/public_html/cis/modules/mod_jt_slideshow/tmpl/default.php on line 273
+[13-Oct-2011 09:16:31] PHP Fatal error:  Cannot use object of type stdClass as array in /home/mark/public_html/cis/modules/mod_jt_slideshow/tmpl/default.php on line 273
+[13-Oct-2011 09:16:31] PHP Fatal error:  Cannot use object of type stdClass as array in /home/mark/public_html/cis/modules/mod_jt_slideshow/tmpl/default.php on line 273
