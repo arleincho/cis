@@ -657,12 +657,13 @@ class modJTSlideShowHelper
 	public static function GetImages($sex,$sport)
 	{
 	   $db = JFactory::getDbo();
-
-		$query = "SELECT * FROM #__sports_images s, jos_directory d 
+	   $sex = $db->getEscaped($sex);
+		$query = "SELECT s.*, d.*, REPLACE(s.sex, '\'', '') sex
+			FROM #__sports_images s, jos_directory d 
 
 					     WHERE s.main_dir = d.id
 						 
-						 AND s.sex = '".$sex."'
+						 AND s.sex = '{$sex}'
 
 					     AND s.sports = '".$sport."'
 

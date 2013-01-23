@@ -9,7 +9,7 @@
 <form action="" method="post" >
 <div style="margin: 100px 0 0 0;">
 <p><strong>You are a:</strong> <label>
-<input type="radio" id="sex1" value="Mens" checked="checked" name="sex">Male</label> <label> <input type="radio" id="sex2" value="Womens" name="sex">Female</label></p>
+<input type="radio" id="sex1" value="Men's" checked="checked" name="sex">Male</label> <label> <input type="radio" id="sex2" value="Women's" name="sex">Female</label></p>
 <p><strong>Sport:</strong>
 <select id="sport" name="sport">
 <option value="">- Select a Sport -</option>

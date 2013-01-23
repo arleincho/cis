@@ -41,6 +41,7 @@ class modSchoolsearchHelper
                 $sql_prov = "AND p.id = '{$post['province']}'";
                 $order = "ORDER BY s.id ASC";
             }
+            $sex = $db->getEscaped($post['sex']);
 		      $query = "SELECT 
                     s.school,
                     s.sex,
@@ -55,7 +56,7 @@ class modSchoolsearchHelper
                 FROM #__school_details s, #__province p
 
 			     WHERE s.province = p.id
-                 AND s.sex = '{$post['sex']}'
+                 AND s.sex = '{$sex}'
 			     AND s.sports = '{$post['sport']}'
                  {$sql_prov}
 			     {$order}"; 

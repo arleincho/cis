@@ -270,7 +270,7 @@ jQuery(document).ready(function(){
         //print_r($images);
    	
 	
-	for ( $i=0 ; $i < count($images) ; $i++ ): echo '<img src="http://www.wiredengine.com/cis/'.$images[$i]->name.'/'.$images[$i]->sports.'/'.$images[$i]->sex.'/'.$images[$i]->image.'"/>';
+	for ( $i=0 ; $i < count($images) ; $i++ ): echo '<img src="http://localhost/cis/'.$images[$i]->name.'/'.$images[$i]->sports.'/'.$images[$i]->sex.'/'.$images[$i]->image.'"/>';
    endfor; ?>
 </div>
 
